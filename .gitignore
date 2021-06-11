@@ -3,8 +3,7 @@
 *.log
 *.pyc
 *.swp
-.DS_Store
-.atom/
+.DS_Store .atom/
 .buildlog/
 .history
 .svn/
@@ -40,7 +39,17 @@ app.*.symbols
 # Obfuscation related
 app.*.map.json
 
+# garbage
+*.DS_Store
+
 # Android Studio will place build artifacts here
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Firebase
+android/app/src/development/google-services.json
+android/app/src/production/google-services.json
+android/app/src/staging/google-services.json
+ios/Runner/Firebase/
+ios/Runner/GoogleService-Info.plist
